@@ -6,15 +6,17 @@
 fn is_even(num: i64) -> bool {
     num % 2 == 0
 }
+//why bool???
 
 // TODO: Fix the function signature.
-fn sale_price(price: i64) -> {
+fn sale_price(price: i64) -> i64{
     if is_even(price) {
         price - 10
     } else {
         price - 3
     }
 }
+//match types as price is also i64
 
 fn main() {
     let original_price = 51;

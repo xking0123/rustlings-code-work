@@ -4,10 +4,34 @@ fn bigger(a: i32, b: i32) -> i32 {
     // Do not use:
     // - another function call
     // - additional variables
+
+    if a == b {
+        println!("{a}");
+        return a;
+    }  else if a > b{
+        println!("{a}");
+        return a;
+    } else if a < b{
+        println!("{b}");
+        return b;    
+    //for rust MUST have final else statement (needs a 'just in case' none of other conditions are present)
+    } else{
+        println!("0");
+        return 0;
+    }
 }
 
 fn main() {
     // You can optionally experiment here.
+
+    //they da same
+    bigger(10, 10);
+    
+    //a bigger
+    bigger(20, 10);
+    
+    //b bigger
+    bigger(10, 20);
 }
 
 // Don't mind this for now :)

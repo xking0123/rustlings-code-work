@@ -1,7 +1,8 @@
 // TODO: Fix the function body without changing the signature.
 fn square(num: i32) -> i32 {
-    num * num;
+    num * num
 }
+//the fix... take away the dam semicolon :(
 
 fn main() {
     let answer = square(3);
